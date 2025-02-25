@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text to MP3</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    #status {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    #selectedText {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+  <h1>Text to MP3</h1>
+  <div id="selectedText">Zaznacz tekst na stronie, a następnie kliknij "Generuj MP3".</div>
+  <div id="status"></div>
+  <audio id="audioPlayer" controls style="display: none; margin-top: 10px;"></audio>
+  <a id="downloadLink" style="display: none; margin-top: 10px;" download="output.mp3">Pobierz MP3</a>
+  <script src="popup.js"></script>
+</body>
+</html>
